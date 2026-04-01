@@ -18,11 +18,9 @@ public class JobService {
         store.jobQueue.enqueue(job);
     }
 
-
     public Job processJob() {
         return store.jobQueue.dequeue();
     }
-
 
     public List<Job> getAllJobs() {
         List<Job> list = new ArrayList<>();

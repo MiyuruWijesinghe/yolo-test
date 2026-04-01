@@ -2,6 +2,7 @@ package com.dsa.dsa_social_api.repository;
 
 import com.dsa.dsa_social_api.dsa.CustomQueue;
 import com.dsa.dsa_social_api.dsa.CustomStack;
+import com.dsa.dsa_social_api.dsa.Graph;
 import com.dsa.dsa_social_api.dsa.LinkedListFeed;
 import com.dsa.dsa_social_api.model.Job;
 import com.dsa.dsa_social_api.model.Post;
@@ -24,4 +25,7 @@ public class InMemoryStore {
 
     // Linked List
     public LinkedListFeed feed = new LinkedListFeed();
+
+    // Graph
+    public Graph graph = new Graph();
 }
