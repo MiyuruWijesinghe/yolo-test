@@ -18,11 +18,9 @@ public class UserService {
         return user;
     }
 
-
     public User get(Long id) {
         return store.users.get(id);
     }
-
 
     public List<User> searchByName(String name) {
         List<User> result = new ArrayList<>();

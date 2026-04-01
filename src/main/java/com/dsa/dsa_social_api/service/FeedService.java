@@ -17,7 +17,6 @@ public class FeedService {
         store.feed.add(post);
     }
 
-
     public List<Post> getFeed() {
         return store.feed.getAll();
     }

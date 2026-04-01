@@ -23,7 +23,6 @@ public class PostService {
         return post;
     }
 
-
     public List<Post> getAll(String sort) {
         List<Post> list = new ArrayList<>(store.posts.values());
 
@@ -32,7 +31,6 @@ public class PostService {
         }
         return list;
     }
-
 
     public List<Post> searchByKeyword(String keyword) {
         List<Post> result = new ArrayList<>();
@@ -45,11 +43,9 @@ public class PostService {
         return result;
     }
 
-
     public Post peekLastPost() {
         return store.postStack.peek();
     }
-
 
     public Post undoLastPost() {
         Post lastPost = store.postStack.pop();
