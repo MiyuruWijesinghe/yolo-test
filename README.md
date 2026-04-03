@@ -4,32 +4,19 @@ A backend project that demonstrates **Data Structures & Algorithms using real-wo
 
 ---
 
-## Think of it like this:
+## 🧠 Think of it like this:
 
 | DSA Concept | Real API Feature |
 |--------|------------|
-| Array / List | JSON collections (GET /users) |
+| ArrayList | JSON collections (GET /users) |
 | HashMap | Fast lookup (GET /users/{id}) |
 | Stack | Undo / history |
 | Queue | Job processing / requests |
 | Linked List | Feed / timeline |
-| Tree | Comments / categories |
+| Tree (Recursion) | Comments / replies |
 | Graph | Followers / recommendations |
 | Sorting | ?sort=asc |
 | Searching | ?search=name |
-
----
-
-## 🧠 Concepts Covered
-
-| Feature | DSA Concept |
-|--------|------------|
-| Users API | HashMap (O(1)) |
-| Posts API | ArrayList + Sorting |
-| Comments | Tree (Recursion) |
-| Undo Feature | Stack |
-| Job Queue | Queue |
-| Followers | Graph |
 
 ---
 
@@ -52,17 +39,23 @@ mvn spring-boot:run
 
 ## 🔥 API Endpoints
 
-### Create User
-POST /users
+### Users
+PATH /users
 
-### Get User
-GET /users/{id}
+### Posts
+PATH /posts
 
-### Create Post
-POST /posts
+### Jobs
+PATH /jobs
 
-### Get Posts (Sorted)
-GET /posts?sort=likes
+### Feeds
+PATH /feed
+
+### Follows
+PATH /follow
+
+### Comments
+PATH /comment
 
 ---
 
@@ -72,7 +65,6 @@ This project is designed to:
 
 - Learn DSA in a practical way
 - Understand backend internals
-- Build interview-ready skills
 
 ---
 
